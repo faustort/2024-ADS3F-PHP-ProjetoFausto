@@ -1,5 +1,7 @@
 <?php
-include "header.php"
+include "header.php";
+$_SESSION['nome'] = "Reche";
+
 ?>
 
 <div class="container">

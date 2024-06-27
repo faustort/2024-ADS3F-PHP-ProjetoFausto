@@ -1,6 +1,6 @@
 <?php
+session_start();
 $nome = "Fausto";
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
