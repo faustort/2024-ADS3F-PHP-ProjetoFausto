@@ -15,6 +15,9 @@
                         <a class="nav-link" href="noticias.php">Notícias</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="inserirNoticia.php">Inserir Notícia</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contato.php">Contato</a>
                     </li>
 
