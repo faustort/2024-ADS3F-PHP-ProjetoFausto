@@ -7,14 +7,8 @@ include "header.php";
         <div class="col">
 
             <?php
-            if (!isset($_SESSION['nome'])) {
 
-                $_SESSION['nome'] = $nome;
-            }
-
-            echo $_SESSION['nome'];
             require_once "connection/Database.php";
-            session_destroy();
 
             $database = new Database();
             $db = $database->getConnection();

@@ -1,6 +1,5 @@
 <?php
 include "header.php";
-$_SESSION['nome'] = "Reche";
 
 ?>
 
