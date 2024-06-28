@@ -1,5 +1,5 @@
 <?php
-
+$titulo = "Inserir notícia";
 include "header.php";
 
 require_once "connection/Database.php";
