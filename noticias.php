@@ -18,21 +18,26 @@ include "header.php";
 
             $database = new Database();
             $db = $database->getConnection();
-            
+
+            // preparação do SQL da consulta
             $stmt = $db->prepare("SELECT * FROM noticias");
+            // execução da consulta 
+            // mas pq preciso executar? Pq eu posso preparar e depois 
+            // criar parametros de inserção na consulta 
+            // neste caso eu chamo a execução
             $stmt->execute();
 
             $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-
-            foreach( $resultado as $row ) {
-                echo "<h2>". $row["titulo"] ."</h2>";
-                echo "<article>". $row["texto"]."</article>";
-            }
-
+            foreach ($resultado as $row) :
             ?>
-
-
+                <article>
+                    <h2><?php echo $row['titulo']; ?></h2>
+                    <div><?php echo $row['texto']; ?></div>
+                </article>
+            <?php
+            endforeach;
+            ?>
         </div>
     </div>
 </div>
